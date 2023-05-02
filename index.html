@@ -21,8 +21,6 @@
             <div class="col">
                 <h1>Model Predictions for unlabeled genes </h1>
 
-        
-
                 <div id="table-container"></div>
             </div>
         </main>
@@ -45,7 +43,7 @@
     <script>
         function format_link(link) {
             if (link)
-                return "<a href='" + link + "' target='_blank'>" + link + "</a>";
+                return "<a href='https://www.genecards.org/cgi-bin/carddisp.pl?gene=" + link + "' target='_blank'>" + link + "</a>";
             else return "";
         }
 
@@ -61,7 +59,7 @@
                 paging: true
             },
             custom_formatting: [
-                [4, format_link]
+                [2, format_link]
             ]
         });
     </script>
